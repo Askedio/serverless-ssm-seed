@@ -15,7 +15,7 @@ class ServerlessPlugin {
     this.options = options;
 
     this.commands = {
-      'ssm-init': {
+      'ssm-seed': {
         usage: 'Sync SSM environment variables on deploy.',
         lifecycleEvents: [
           'deploy',
@@ -32,7 +32,7 @@ class ServerlessPlugin {
     };
 
     this.hooks = {
-      'ssm-init:deploy': this.handle.bind(this),
+      'ssm-seed:deploy': this.handle.bind(this),
     };
   }
 
@@ -72,7 +72,7 @@ class ServerlessPlugin {
     }
 
     if (stages.length && !stages.includes(stage)) {
-      this.serverless.cli.log(`Stage '${stage}' is not enabled for ssm-init. Allowed stages: ${stages}.`);
+      this.serverless.cli.log(`Stage '${stage}' is not enabled for ssm-seed. Allowed stages: ${stages}.`);
       return;
     }
 

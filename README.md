@@ -4,7 +4,7 @@ More information about SSM environment variables: [Server Variables from AWS SSM
 
 # Installation
 ```bash
-npm i serverless-ssm-init
+npm i serverless-ssm-seed
 ```
 
 # Configuration
@@ -14,7 +14,7 @@ In your `serverless.yml`:
 
 ```yaml
 plugins:
-    - serverless-ssm-init
+    - serverless-ssm-seed
 ```
 ## Define the configuration
 ```yaml
@@ -35,12 +35,12 @@ custom:
 # Usage
 Seed using your .env values for the defaults:
 ```
-sls ssm-init
+sls ssm-seed
 ```
 
 Use a string instead of .env values for the defaults:
 ```
-sls ssm-init --ssm-default='default'
+sls ssm-seed --ssm-default='default'
 ```
 
 # Verify

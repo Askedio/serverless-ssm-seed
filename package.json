@@ -1,6 +1,6 @@
 {
-  "name": "serverless-ssm-seed",
-  "version": "0.1.0",
+  "name": "@askedio/serverless-ssm-seed",
+  "version": "0.1.1",
   "description": "Serverless AWS SSM Parameter Initiation plugin",
   "main": "index.js",
   "scripts": {
