@@ -1,10 +1,10 @@
-This plugin will seed your AWS SSM Paramter Store with the environment you have defined in your serverless config. By default your .env will be used to populate the values;
+This plugin will seed your AWS SSM Parameter Store with the environment you have defined in your serverless config. By default your .env will be used to populate the values;
 
 More information about SSM environment variables: [Server Variables from AWS SSM Parameter Store](https://serverless.com/framework/docs/providers/aws/guide/variables/#reference-variables-using-the-ssm-parameter-store)
 
 # Installation
 ```bash
-npm i serverless-ssm-seed
+npm i serverless-ssm-seed --save-dev
 ```
 
 # Configuration
